@@ -7,6 +7,12 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { StandingsComponent } from './components/standings/standings.component';
 import { HeaderComponent } from './components/header/header.component';
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatTableModule, MatSelectModule, MatFormFieldModule } from "@angular/material";
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { Interceptor } from "./services/app.interceptor";
+import { StandingService } from "./services/standing.service";
+
 @NgModule({
   declarations: [
     AppComponent,
